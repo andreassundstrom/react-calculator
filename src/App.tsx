@@ -1,7 +1,7 @@
 import { useEffect, useReducer, useState } from 'react'
 
 import AppContext from './AppContext'
-import DebugHeader from './components/DebugHeader'
+import OutputHeader from './components/OutputHeader'
 import Numbers from './components/Numbers'
 import Box from '@mui/material/Box'
 import './App.css'
@@ -43,7 +43,7 @@ function App() {
         
         <Box height={'100%'} justifyContent={'center'} alignItems={'center'} display='flex'>
           <Card sx={{maxWidth:600, p:2}} elevation={5}>
-          <DebugHeader />
+          <OutputHeader />
           <Numbers />
           </Card>
         </Box>
